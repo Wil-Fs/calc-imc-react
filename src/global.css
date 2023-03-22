@@ -1,0 +1,29 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 780px;
+    width: 100%;
+    height: 500px;
+    margin: 6% auto 0;
+    background-color: var(--containerBgColor);
+}
+
+:root {
+    --bgColor: #a4a4bf;
+    --containerBgColor: #2a3457;
+    --borderTable: #f2eafd;
+    --borderResult: #f2eafd;
+    --bgColorTable: #888c46;
+    --bgColorInput: #888c46;
+    --fontColor: #f2eafd;
+}

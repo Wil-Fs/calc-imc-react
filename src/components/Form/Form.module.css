@@ -1,0 +1,62 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--containerBgColor);
+    margin: 10% 0 6%;
+}
+
+.formInputAltura, .formInputPeso, .formInputAltura::placeholder, .formInputPeso::placeholder {
+    padding: 8px 8px 0;
+    margin-bottom: 4px;
+    background-color: var(--bgColorInput);
+    border: none;
+    font-size: 18px;
+    border-bottom: 2px solid var(--fontColor);
+    color: var(--fontColor);
+}
+
+
+.resultIMC{
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid var(--borderResult);
+    background-color: var(--bgColorInput);
+}
+
+.titleAviso {
+    font-size: 18px;
+    padding: 8px;
+    background-color: var(--containerBgColor);
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid 2px var(--borderTable);
+    border-left: solid 2px var(--borderTable);
+    background-color: var(--bgColorTable);
+}
+
+.thead {
+    text-align: center;
+    padding: 8px;
+    background-color: var(--bgColorTable);
+}
+
+
+.tbodyLine {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    background-color: var(--bgColorTable);
+}
+
+.tbodyColumn {
+    border-bottom: 2px solid var(--borderTable);
+    padding: 8px 8px 0;
+    margin-bottom: 8px;
+    background-color: var(--bgColorTable);
+}
+
