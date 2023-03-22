@@ -21,9 +21,9 @@ const Form = () => {
         <div className="container">
             <form className={styles.form}>
                 <input className={styles.formInputAltura} type="number" placeholder="Informe sua altura" onChange={event => setAltura(event.target.valueAsNumber)} />
-                <input className={styles.formInputPeso} type="number" placeholder="Inform seu peso" onChange={event => setPeso(event.target.valueAsNumber)} />
+                <input className={styles.formInputPeso} type="number" placeholder="Informe seu peso" onChange={event => setPeso(event.target.valueAsNumber)} />
             </form>
-            {isNaN(imc()) || imc() < 18.5 ? <span></span> : <b className={styles.resultIMC}>Seu IMC é : {imc()}</b> }
+            {isNaN(imc()) || imc() <= 18.5 ? <span></span> : <b className={styles.resultIMC}>Seu IMC é : {imc()}</b> }
             {
                 !renderTable() ?
                     (<h1 className={styles.titleAviso} >Valores mínimos para cálculo: Altura maior igual a 1.20m! // Peso maior igual a 18.5 Kg!</h1>)
